@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Job Listings</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link href="./estilos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER PARA MOVIL -->
+    <div class="contenedor-header-movil">
+      <img src="./images/bg-header-mobile.svg" alt="fondo" />
+    </div>
+    <!-- HEADER PARA PC -->
+    <div class="contenedor-header-pc">
+      <img src="./images/bg-header-desktop.svg" alt="fondo" />
+    </div>
+    <!-- Contenedor de las cards -->
+    <div class="contenedor-cards">
+      <!--BUSCADOR-->
+      <div class="buscador" >
+        <div class="etiquetas-buscadas" id="buscador">
+          
+        </div>
+        <div class="btn-clear" onclick="limpiar()">Clear</div>
+      </div>
+
+
+      <!-- Item Start -->
+      <div class="card">
+        <img src="./images/photosnap.svg" alt="foto" />
+        <div class="info-central">
+          <div class="encabezado">
+            <div class="empresa">Photosnap</div>
+            <div class="estado">New!</div>
+            <div class="importancia">Featured</div>
+          </div>
+          <div class="puesto">Senior Frontend Developer</div>
+          <ul class="caracteristicas">
+            <li>1d ago</li>
+            <li>Full Time</li>
+            <li>USA only</li>
+          </ul>
+        </div>
+
+        <div class="contenedor-requisitos">
+          <span></span>
+          <div class="requisitos">
+            <!-- Role -->
+            <div class="caja-texto" data-valor="Frontend">Frontend</div>
+            <!-- Level -->
+            <div class="caja-texto" data-valor="Senior">Senior</div>
+            <!-- Languages -->
+            <div class="caja-texto" data-valor="HTML">HTML</div>
+            <div class="caja-texto" data-valor="CSS">CSS</div>
+            <div class="caja-texto" data-valor="JavaScript">JavaScript</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item End -->
+      <!-- Item Start -->
+      <div class="card">
+        <img src="./images/manage.svg" alt="foto" />
+        <div class="info-central">
+          <div class="encabezado">
+            <div class="empresa">Manage</div>
+            <div class="estado">New!</div>
+            <div class="importancia">Featured</div>
+          </div>
+          <div class="puesto">Fullstack Developer</div>
+          <ul class="caracteristicas">
+            <li>1d ago</li>
+            <li>Part Time</li>
+            <li>Remote</li>
+          </ul>
+        </div>
+        <div class="contenedor-requisitos">
+          <span></span>
+          <div class="requisitos">
+            <!-- Role -->
+            <div class="caja-texto" data-valor="Fullstack">Fullstack</div>
+            <!-- Level -->
+            <div class="caja-texto" data-valor="Midweight">Midweight</div>
+            <!-- Languages -->
+            <div class="caja-texto" data-valor="Python">Python</div>
+            <!-- Tools -->
+            <div class="caja-texto" data-valor="React">React</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item End -->
+
+      <!-- Item Start -->
+      <div class="card">
+        <img src="./images/account.svg" alt="foto">
+        <div class="info-central">
+          <div class="encabezado">
+            <div class="empresa">Account</div>
+            <div class="estado">New!</div>
+          </div>
+          <div class="puesto">Junior Frontend Developer</div>
+          <ul class="caracteristicas">
+            <li>2d ago</li>
+            <li>Part Time</li>
+            <li>USA only</li>
+          </ul>
+        </div>
+        <div class="contenedor-requisitos">
+          <span></span>
+          <div class="requisitos">
+            <!-- Role -->
+            <div class="caja-texto" data-valor="Frontend">Frontend</div>
+            <!-- Level -->
+            <div class="caja-texto" data-valor="Junior">Junior</div>
+            <!-- Tools -->
+            <div class="caja-texto" data-valor="React">React</div>
+            <div class="caja-texto" data-valor="Sass">Sass</div>
+            <!-- Languages -->
+            <div class="caja-texto" data-valor="JavaScript">JavaScript</div>
+          </div>
+        </div>
+      </div>
+      <!-- Item End -->
+
+
+
+      <!-- Item Start -->
+      <div class="card">
+        <img src="./images/myhome.svg" alt="foto">
+        <div class="info-central">
+          <div class="encabezado">
+            <div class="empresa">MyHome</div>
+          </div>
+          <div class="puesto">Junior Frontend Developer</div>
+          <ul class="caracteristicas">
+            <li>5d ago</li>
+            <li>Contract</li>
+            <li>USA only</li>
+          </ul>
+        </div>
+        <div class="contenedor-requisitos">
+          <span></span>
+          <div class="requisitos">
+            <!-- Role -->
+            <div class="caja-texto" data-valor="Frontend">Frontend</div>
+            <!-- Level -->
+            <div class="caja-texto" data-valor="Junior">Junior</div>
+            <!-- Languages -->
+            <div class="caja-texto" data-valor="CSS">CSS</div>
+            <div class="caja-texto" data-valor="JavaScript">JavaScript</div>
+          </div>
+        </div>
+      </div>
+      <!-- Item End -->
+
+
+
+      <!-- Item Start -->
+      <div class="card">
+        <img src="./images/loop-studios.svg" alt="foto">
+        <div class="info-central">
+          <div class="encabezado">
+            <div class="empresa">Loop Studios</div>
+          </div>
+          <div class="puesto">Software Engineer</div>
+          <ul class="caracteristicas">
+            <li>1w ago</li>
+            <li>Full Time</li>
+            <li>Worldwide</li>
+          </ul>
+        </div>
+        <div class="contenedor-requisitos">
+          <span></span>
+          <div class="requisitos">
+            <!-- Role -->
+            <div class="caja-texto" data-valor="Fullstack">Fullstack</div>
+            <!-- Level -->
+            <div class="caja-texto" data-valor="Midweight">Midweight</div>
+            <!-- Languages -->
+            <div class="caja-texto" data-valor="JavaScript">JavaScript</div>
+            <!-- Tools -->
+            <div class="caja-texto" data-valor="Sass">Sass</div>
+            <div class="caja-texto" data-valor="Ruby">Ruby</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item End -->
+
+      <!-- Item Start -->
+      <div class="card">
+        <img src="./images/faceit.svg" alt="foto">
+        <div class="info-central">
+          <div class="encabezado">
+            <div class="empresa">FaceIt</div>
+          </div>
+          <div class="puesto">Junior Backend Developer</div>
+          <ul class="caracteristicas">
+            <li>2w ago</li>
+            <li>Full Time</li>
+            <li>UK only</li>
+          </ul>
+        </div>
+        <div class="contenedor-requisitos">
+          <span></span>
+          <div class="requisitos">
+            <!-- Role -->
+            <div class="caja-texto" data-valor="Backend">Backend</div>
+            <!-- Level -->
+            <div class="caja-texto" data-valor="Junior">Junior</div>
+            <!-- Languages -->
+            <div class="caja-texto" data-valor="Ruby">Ruby</div>
+            <div class="caja-texto" data-valor="RoR">RoR</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item End -->
+
+      <!-- Item Start -->
+      <div class="card">
+        <img src="./images/shortly.svg" alt="foto">
+        <div class="info-central">
+          <div class="encabezado">
+            <div class="empresa">Shortly</div>
+          </div>
+          <div class="puesto">Junior Developer</div>
+          <ul class="caracteristicas">
+            <li>2w ago</li>
+            <li>Full Time</li>
+            <li>Worldwide</li>
+          </ul>
+        </div>
+        <div class="contenedor-requisitos">
+          <span></span>
+          <div class="requisitos">
+            <!-- Role -->
+            <div class="caja-texto" data-valor="Frontend">Frontend</div>
+            <!-- Level -->
+            <div class="caja-texto" data-valor="Junior">Junior</div>
+            <!-- Languages -->
+            <div class="caja-texto" data-valor="HTML">HTML</div>
+            <div class="caja-texto" data-valor="Sass">Sass</div>
+            <div class="caja-texto" data-valor="JavaScript">JavaScript</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item End -->
+
+      <!-- Item Start -->
+      <div class="card">
+        <img src="./images/insure.svg" alt="foto">
+        <div class="info-central">
+          <div class="encabezado">
+            <div class="empresa">Insure</div>
+          </div>
+          <div class="puesto">Junior Frontend Developer</div>
+          <ul class="caracteristicas">
+            <li>2w ago</li>
+            <li>Full Time</li>
+            <li>USA only</li>
+          </ul>
+        </div>
+        <div class="contenedor-requisitos">
+          <span></span>
+          <div class="requisitos">
+            <!-- Role -->
+            <div class="caja-texto" data-valor="Frontend">Frontend</div>
+            <!-- Level -->
+            <div class="caja-texto" data-valor="Junior">Junior</div>
+            <!-- Languages -->
+            <div class="caja-texto" data-valor="Vue">Vue</div>
+            <div class="caja-texto" data-valor="JavaScript">JavaScript</div>
+            <div class="caja-texto" data-valor="Sass">Sass</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item End -->
+
+      <!-- Item Start -->
+      <div class="card">
+        <img src="./images/eyecam-co.svg" alt="foto">
+        <div class="info-central">
+          <div class="encabezado">
+            <div class="empresa">Eyecam Co.</div>
+          </div>
+          <div class="puesto">Full Stack Engineer</div>
+          <ul class="caracteristicas">
+            <li>3w ago</li>
+            <li>Full Time</li>
+            <li>Worldwide</li>
+          </ul>
+        </div>
+        <div class="contenedor-requisitos">
+          <span></span>
+          <div class="requisitos">
+            <!-- Role -->
+            <div class="caja-texto" data-valor="Fullstack">Fullstack</div>
+            <!-- Level -->
+            <div class="caja-texto" data-valor="Midweight">Midweight</div>
+            <!-- Languages -->
+            <div class="caja-texto" data-valor="JavaScript">JavaScript</div>
+            <div class="caja-texto" data-valor="Django">Django</div>
+            <div class="caja-texto" data-valor="Python">Python</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item End -->
+
+      <!-- Item Start -->
+      <div class="card">
+        <img src="./images/the-air-filter-company.svg" alt="foto">
+        <div class="info-central">
+          <div class="encabezado">
+            <div class="empresa">The Air Filter Company</div>
+          </div>
+          <div class="puesto">Front-end Dev</div>
+          <ul class="caracteristicas">
+            <li>1mo ago</li>
+            <li>Part Time</li>
+            <li>Worldwide</li>
+          </ul>
+        </div>
+        <div class="contenedor-requisitos">
+          <span></span>
+          <div class="requisitos">
+            <!-- Role -->
+            <div class="caja-texto" data-valor="Frontend">Frontend</div>
+            <!-- Level -->
+            <div class="caja-texto" data-valor="Junior">Junior</div>
+            <!-- Languages -->
+            <div class="caja-texto" data-valor="React">React</div>
+            <div class="caja-texto" data-valor="Sass">Sass</div>
+            <div class="caja-texto" data-valor="JavaScript">JavaScript</div>
+          </div>
+        </div>
+      </div>
+      <!-- Item End -->
+    </div>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">HUGO GAYTAN</a>.
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

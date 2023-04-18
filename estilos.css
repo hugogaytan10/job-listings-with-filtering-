@@ -1,0 +1,257 @@
+/* FUENTE USADA*/
+@import url(https://fonts.google.com/specimen/League+Spartan);
+
+:root {
+    --primary: hsl(180, 29%, 50%);
+    --background: hsl(180, 52%, 96%);
+    --cyan-oscuro: hsl(180, 14%, 20%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+    font-family: 'League Spartan', sans-serif;
+}
+.contenedor-header-movil{
+    display: block;
+}
+.contenedor-header-movil>img {
+    width: 100%;
+    background-color: var(--primary);
+}
+.contenedor-header-pc > img{
+    display: none;
+}
+.contenedor-cards {
+    padding: 1em;
+    position: relative;
+}
+
+.buscador {
+    width: 85%;
+    min-height: 4em;
+    padding: 1em;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -1em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.etiquetas-buscadas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    background-color: #fff;
+}
+.buscar{
+    display: flex;
+}
+.texto{
+    background-color: var(--background);
+    color: var(--primary);
+    font-weight: 700;
+    padding: 0.5em;
+    border-left: 8px;
+    
+}
+.cancelar{
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0.5em;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-weight: 700;
+}
+.cancelar:hover{
+    cursor: pointer;
+    background-color: var(--cyan-oscuro);
+}
+.btn-clear {
+    background-color: #fff;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    color: hsl(180, 8%, 52%);
+}
+.btn-clear:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--primary);
+}
+
+.card {
+    width: 90%;
+    padding: 1em;
+    margin: auto;
+    margin-top: 4em;
+    border-left: 0.3em solid var(--primary);
+    background-color: #fff;
+    box-shadow: 0 1px 20px 0px hsla(180, 29%, 50%, 0.311);
+    border-radius: 5px;
+    position: relative;
+}
+.contenedor-cards > div:nth-child(2){
+    margin-top: 6em;
+}
+.card>img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10%;
+    top: -10%;
+}
+
+.info-central {
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+}
+
+.encabezado {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    gap: 0.3em;
+    align-items: center;
+    background-color: #fff;
+}
+
+.empresa {
+    font-size: 15px;
+    color: var(--primary);
+    font-weight: 700;
+    background-color: #fff;
+}
+
+.estado,
+.importancia {
+    font-size: 15px;
+    border-radius: 25px;
+    color: #ffff;
+    font-weight: 700;
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+
+.estado {
+    background-color: var(--primary);
+}
+
+.importancia {
+    background-color: var(--cyan-oscuro);
+}
+
+.puesto {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 0.5em;
+    background-color: #fff;
+}
+.puesto:hover{
+    cursor: pointer;
+    color: var(--primary);
+}
+/* CARACTERISTICAS ESPECIFICAS DEL EMPLEO */
+.caracteristicas {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #fff;
+}
+
+.caracteristicas li {
+    margin-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    color: rgb(138, 133, 133);
+    background-color: #fff;
+}
+
+.caracteristicas li:first-child {
+    padding-left: 0;
+}
+
+.caracteristicas li:not(:first-child)::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+}
+
+/*  termina caracteristicas especificas */
+.contenedor-requisitos {
+    background-color: #fff;
+}
+
+/*LINEA QUE SEPARA LOS REQUISITOS*/
+span {
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(177, 169, 169);
+    display: block;
+}
+
+.requisitos {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 0;
+    gap: 1em;
+}
+
+.requisitos>div {
+    background-color: var(--background);
+    color: var(--primary);
+    padding: 0.3em;
+    font-weight: 700;
+}
+.requisitos>div:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+    color: #fff;
+}
+@media(min-width:1200px) {
+    .contenedor-header-movil {
+        display: none;
+    }
+
+    .contenedor-header-pc>img {
+        display: block;
+        width: 100%;
+        background-color: var(--primary);
+    }
+
+    .contenedor-cards {
+        padding: 3em;
+    }
+
+    span {
+        display: none;
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card>img {
+        position: initial;
+        align-self: center;
+        margin-right: 1em;
+    }
+
+    .info-central {
+        width: 50%;
+    }
+
+    .contenedor-requisitos {
+        align-self: center;
+    }
+}
